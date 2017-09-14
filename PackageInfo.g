@@ -10,8 +10,8 @@ SetPackageInfo( rec(
 
 PackageName := "TestReleaseTools",
 Subtitle := "Test package for ReleaseTools",
-Version := "0.1",
-Date := "01/03/2016", # dd/mm/yyyy format
+Version := "0.1.1",
+Date := "14/09/2017", # dd/mm/yyyy format
 
 Persons := [
   rec(
@@ -41,7 +41,7 @@ IssueTrackerURL := Concatenation( ~.SourceRepository.URL, "/issues" ),
 #SupportEmail   := "TODO",
 PackageWWWHome  := "https://fingolfin.github.io/TestReleaseTools/",
 PackageInfoURL  := Concatenation( ~.PackageWWWHome, "PackageInfo.g" ),
-README_URL      := Concatenation( ~.PackageWWWHome, "README.md" ),
+README_URL      := Concatenation( ~.PackageWWWHome, "README" ),
 ArchiveURL      := Concatenation( ~.SourceRepository.URL,
                                  "/releases/download/v", ~.Version,
                                  "/", ~.PackageName, "-", ~.Version ),
